@@ -3,23 +3,27 @@
 /**
  * main - Entry Point
  *
- * Description:
+ * Description: program that prints all the numbers of base 16 in lowercase
  *
  * Return: 0 (success)
 */
 
 int main(void)
 {
-	int digit = 48;
+	char ch = '0';
 
-	while (digit <= 102)
+	while (ch <= '9')
 	{
-		putchar(digit);
-		if (digit == 57)
-		{
-			digit += 39;
-			digit++;
-		}
+		putchar(ch);
+		ch++;
+	}
+
+	ch = 'a'
+
+	while (ch <= 'f')
+	{
+		putchar(ch);
+		ch++;
 	}
 	putchar('\n');
 	return (0);
