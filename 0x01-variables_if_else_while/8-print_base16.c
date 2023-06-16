@@ -18,7 +18,7 @@ int main(void)
 		ch++;
 	}
 
-	ch = 'a'
+	ch = 'a';
 
 	while (ch <= 'f')
 	{
