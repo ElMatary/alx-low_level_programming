@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	int num1 = o;
+	int num1 = 0;
 	int num2;
 
 	while (num1 <= 99)
