@@ -1,6 +1,11 @@
 #include "main.h"
 
-/***/
+/**
+ * print_most_numbers - print from 0 to 9
+ * using _putchar
+ *
+ * Return: 0 (Success)
+*/
 
 void print_most_numbers(void)
 {
