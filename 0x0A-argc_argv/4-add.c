@@ -12,21 +12,20 @@
 
 int main(int argc, int argv[])
 {
-	int i, x;
-	int a = 0;
+	int i = 0;
+	char *a;
 
-	for (i = 1; i < argc; i++)
+	while (--argc)
 	{
-		for (x = 0; argv[i][x]; x++)
+		for (a = argv[argc]; *a; a++)
 		{
-			if (argv[i][x] < '0' || argv[i][x] < '9')
+			if (*a < '0' || *a > '9')
 			{
-				printf("Error\n");
-				return (1);
+				return (printf("Error\n"), 1);
 			}
 		}
-		a += atoi(argv[i])
+		i += atoi(argv[argc]);
 	}
-	printf("%d\n", a);
+	printf("%d\n", i);
 	return (0);
 }
