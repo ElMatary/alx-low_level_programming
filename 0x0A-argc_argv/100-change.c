@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		int x, i = 5;
 		int a = atoi(argv[1]);
-		int cents[] = {25, 15, 5, 2, 1};
+		int cents[] = {25, 10, 5, 2, 1};
 
 		for (x = 0; x < 5; x++)
 		{
