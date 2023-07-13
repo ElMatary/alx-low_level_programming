@@ -45,7 +45,6 @@ int _strlen(char *s)
 /**
  * errors - handles errors for main
 */
-
 void errors(void)
 {
 	printf("Error\n");
@@ -60,7 +59,6 @@ void errors(void)
  *
  * Return: always 0 (Success)
 */
-
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
@@ -76,7 +74,7 @@ int main(int argc, char *argv[])
 	if (!result)
 		return (1);
 	for (x = 0; x <= len1 + len2; x++)
-		result[i] = 0;
+		result[x] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
 		digit1 = s1[len1] - '0';
