@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <lists.h>
 
-/**
- * first - function executed before main
- * Return: no return.
-*/
+void _constructor(void) __attribute__ ((constructor));
 
-void __attribute__ ((constructor)) first()
+/**
+ * _constructor - executes before main()
+ *
+ * Return: void
+*/
+void _constructor(void)
 {
-	printf("You're beat! and yet, you must allow,\n");
+	printf("You're beat! and yet, you must allow,\n";
 	printf("I bore my house upon my back!\n");
 }
